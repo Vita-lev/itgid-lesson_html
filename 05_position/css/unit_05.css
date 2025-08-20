@@ -346,11 +346,22 @@ p {
   height: 30px;
   text-align: center;
   line-height: 30px;
+  border: 1px solid #000;
+}
+
+.block-1 {
+  border-bottom: none;
 }
 
 .block-2 {
-  position: absolute;
+  position: relative;
   left: 150px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.block-3 {
+  border-top: none;
 }
 
 /* Task 10 END -------------------------------------- */

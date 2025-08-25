@@ -211,13 +211,20 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1%;
+    padding: 1%;
   }
 
   .out-2 .block-1,
-  .out-2 .block-2 {
-    grid-column: span 1;
-    grid-row: span 1;
+  .out-2 .block-2,
+  .out-2 .block-3,
+  .out-2 .block-4 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
+}
+
+@media (max-width: 600px) {
 }
 
 /* ================ task 3 ========================= */

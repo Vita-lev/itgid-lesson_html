@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .c {
+        width: 100px;
+        height: 100px;
+        background: green;
+        animation-name: pp;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pp {
+        from {
+        }
+
+        to {
+          width: 500px;
+          background: orange;
+        }
+      }
+
+      .a {
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 100px auto;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .b {
+        position: relative;
+        top: 0;
+        background: bisque;
+      }
+
+      .b .p-1,
+      .b .p-2,
+      .b .p-3 {
+        padding: 10px;
+        text-align: center;
+        background: orangered;
+      }
+
+      .b .p-3 {
+        position: absolute;
+        top: 39px;
+        left: -88px;
+      }
+
+      .a:hover > .b {
+        animation-name: ttt;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes ttt {
+        0% {
+        }
+
+        50% {
+          top: -39px;
+          left: 0;
+        }
+
+        100% {
+          left: 90px;
+          top: -38px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <div class="b">
+        <div class="p-1">Hello</div>
+        <div class="p-2">Test</div>
+        <div class="p-3">Animation</div>
+      </div>
+    </div>
+
+    <div class="c"></div>
+  </body>
+</html>
